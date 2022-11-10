@@ -3,9 +3,9 @@
 
 Domain ontologies are the foundational components to develop global solutions with industry standards. The Azure IoT engineering team has been collaborating with customers, domain experts, and industry-standard organizations to develop DTDL ontologies by leveraging the existing industry ontologies and best practices. 
 
-Earlier, we published the DTDL ontologies for [smart buildings](https://github.com/Azure/opendigitaltwins-building) based on RealEstateCore, and for [smart cities](https://github.com/Azure/opendigitaltwins-smartcities) based on ETSI NGSI-LD. 
+**Earlier**, we published the DTDL ontologies for [smart buildings](https://github.com/Azure/opendigitaltwins-building) based on RealEstateCore, and for [smart cities](https://github.com/Azure/opendigitaltwins-smartcities) based on ETSI NGSI-LD. 
 
-Today, we are releasing the energy grid ontology adapted from [Common Information Model (CIM)](https://cimug.ucaiug.org/Pages/About.aspx), a global standard for energy grid assets management, power system operations modeling and physical energy commodity market. The CIM-based DTDL ontology provides contextual understanding of data by identifying the properties of various grid entities and the relationships among them. Power & Utilities customers and partners can leverage as well as extend this open-source repository for their solutions and contribute their learnings to the repository for others to benefit from. 
+**Today**, we are releasing the energy grid ontology adapted from [Common Information Model (CIM)](https://cimug.ucaiug.org/Pages/About.aspx), a global standard for energy grid assets management, power system operations modeling and physical energy commodity market. The CIM-based DTDL ontology provides contextual understanding of data by identifying the properties of various grid entities and the relationships among them. Power & Utilities customers and partners can leverage as well as extend this open-source repository for their solutions and contribute their learnings to the repository for others to benefit from. 
 
 The CIM organizes entities into distinct packages. In this first iteration, we have included core, wire, and generation packages, and prosumer-related entities from metering, customer, and Distributed Energy Resource (DER) packages. We have selected them based on the implemented and in-progress solutions, and on the collaborative decision of the extended team members of Agder Energi, Statnett, Sirus, FiWare, and Azure IoT. 
 - **Core Package** contains the PowerSystemResource, ConductingEquipmen, and common collections of those entities shared by all applications. Most of the other packages have associations and generalizations that depend on the core package. 
@@ -18,21 +18,20 @@ If you need additional entities before the next iteration, please contact us. If
 ![Energy grid models](EnergyGridOntologyModel.png)
 
 
-
-# How To Use
+## How To Use
 
 Using these models you can now build Azure Digital Twins based solution and bring it to life in a live execution environment.
 
 You can use Azure Digital Twins Explorer to create a sample easily: upload models, instantiate entities in a twins graph, visualize the graph and run queries against the graph. 
 
 
-# Modeling guidelines
+## Modeling guidelines
 
 Before creating new entities, [check if they exist already in the repo](https://github.com/Azure/opendigitaltwins-energygrid). You can look under each folder.
 
 To learn how to adopt the ontology for your project, refer to [How to use the ontology](https://github.com/Azure/opendigitaltwins-smartcities#how-to-use).
 
-# Syntax
+## Syntax
 
 - Use English terms, preferably American English
 - Use camel case syntax for attribute names (camelcase)
@@ -40,13 +39,13 @@ To learn how to adopt the ontology for your project, refer to [How to use the on
 - Use names and not verbs for Attributes of type Property, for example: nominalVoltage, EquipmentContainer
 - Use verbs for Relationship and optional an object, for example: locatedAt, partOf
 
-# Data Types
+## Data Types
 DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas).
 
-# Validation
+## Validation
 Use the [DTDL Validator tool](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/) to validate the model document to make sure the DTDL is valid.
 
-# Resources
+## Resources
 - [Azure Digital Twins product page](https://azure.microsoft.com/services/digital-twins/)
 - [Azure Digital Twins documentation](https://docs.microsoft.com/en-us/azure/digital-twins/)
 - [Azure Digital Twins Tech Deep Dive](https://www.youtube.com/watch?v=5Ku55g1GQG8&feature=youtu.be)
