@@ -34,11 +34,11 @@ To learn how to adopt the ontology for your project, refer to [How to use the on
 
 # Syntax
 
-- Use English terms, preferably American English.
-- Use camel case syntax for attribute names (camelcase).
-- Entity Type names must start with a Capital letter, for example: Substation.
-- Use names and not verbs for Attributes of type Property, for example: nominalVoltage, EquipmentContainer.
-- Use verbs for Relationship and optional an object, for example: locatedAt, partOf.
+- Use English terms, preferably American English
+- Use camel case syntax for attribute names (camelcase)
+- Entity Type names must start with a capital letter, for example: Substation
+- Use names and not verbs for Attributes of type Property, for example: nominalVoltage, EquipmentContainer
+- Use verbs for Relationship and optional an object, for example: locatedAt, partOf
 
 # Data Types
 DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas).
@@ -54,8 +54,6 @@ Use the [DTDL Validator tool](https://docs.microsoft.com/en-us/samples/azure-sam
 - [DTDL Ontologies](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-ontologies)
 - [ADT Explorer](https://github.com/Azure-Samples/digital-twins-explorer)
 - [Azure Digital Twins Model Uploader](https://github.com/Azure/opendigitaltwins-tools/tree/master/ADTTools#uploadmodels)
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact opencode@microsoft.com with any additional questions or comments.
 
 ## License
 Copyright (c) Microsoft Corporation
