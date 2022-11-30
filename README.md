@@ -11,7 +11,7 @@ The CIM organizes entities into distinct packages. In this first iteration, we h
 - **Core Package** contains the PowerSystemResource, ConductingEquipmen, and common collections of those entities shared by all applications. Most of the other packages have associations and generalizations that depend on the core package. 
 - **Wire Package** is an extension to the Core that provides model information on the electrical characteristics of transmission and distribution networks. This package is used by network applications, such as state estimation, load flow, and optimal power flow. 
 - **Generation Package** has information for unit commitment and economic dispatch of hydro and thermal generating units, load forecasting, automatic generation control, and unit modeling for training simulation. 
-Last but not least – **prosumer** – we included various entities related to consumer and DER in the prosumer folder. For examples, EquivalentLoad, UsagePoints, and MeterReading.
+– **Prosumer** – we included various entities related to consumer and DER in the prosumer folder. For examples, EquivalentLoad, UsagePoints, and MeterReading.
 
 If you need additional entities before the next iteration, please contact us. If you already have DTDL grid entities feel free to contribute them to the repo.   
 
